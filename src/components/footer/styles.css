@@ -1,0 +1,57 @@
+@import url('../../assets/generalStyles.css');
+
+.footer{
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.footer > div{
+    display: flex;
+}
+
+.footer > div:not(.footer-vl){
+    flex: 1;
+}
+
+.footer > div:not(.footer-vl)  {
+    padding: 2em;
+}
+
+.footer-vl{
+    padding: 0;
+    border-left: 2px solid var(--primary-white);
+    height: 80px;
+}
+
+.footer-img {
+    flex-direction: row-reverse;
+}
+
+.footer-img > img {
+    width: 50%;
+    min-width: 100px;
+    max-width: 300px;
+    max-height: 80px;
+}
+
+.footer-text {
+    flex-direction: column;
+}
+
+.footer-text > p {
+    margin: .05em;
+    font-family: Baloo;
+    font-size: 12px;
+}
+
+.footer-text > p > a{
+    text-decoration: underline;
+    color: var(--primary-white);
+}
+
+.footer-text > p:last-child {
+    margin-top: 1em;
+    font-family: BalooBold;
+    font-size: 15px;
+}

@@ -1,0 +1,27 @@
+@import url('../../assets//colors.css');
+
+.menu-selected {
+    color: var(--primary-blue);
+    border-bottom: 6px solid var(--primary-blue);
+}
+
+.menu > div {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu > div > a{
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+.menu > div:is(.menu-selected) > a{
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+.menu > div:hover {
+    font-family: BalooBold;
+    cursor: pointer;
+}

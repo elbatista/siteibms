@@ -1,0 +1,65 @@
+@import url('../../assets/generalStyles.css');
+
+.header{
+    display: flex;
+    flex-direction: row;
+    font-family: Baloo;
+    font-size: 24px;
+    align-items:flex-end
+}
+
+.header > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > div:last-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: .5em;
+}
+
+.header-img{
+    flex: .5;
+}
+
+.menu {
+    flex: 6;
+}
+
+.header-store{
+    flex: 2;
+    
+}
+
+.header-img  > img {
+    margin: 15px;
+    width: 40%;
+    min-width: 50px;
+    max-width: 70px;
+    min-height: 50px;
+    max-height: 70px;
+}
+
+.header-store{
+    align-items: center;
+}
+
+.header-store  > label{
+    margin-right: 1em;
+}
+
+.header-store  > img{
+    padding: 2px;
+}
+
+.header-store  > img:not(:last-child) {
+    width: 25px;
+    height: 25px;
+}
+
+.header-store  > img:last-child {
+    width: 30px;
+    height: 30px;
+}
