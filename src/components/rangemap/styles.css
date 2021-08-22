@@ -1,0 +1,7 @@
+.range-map-header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  font-family: Baloo;
+  color: var(--primary-grey);
+}

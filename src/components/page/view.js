@@ -6,7 +6,7 @@ export default props => {
     return (
         <>
             <Header/>
-            <div className="page">
+            <div className={`page ${props.padding ? 'page-padding' : ''}`}>
                 {props.children}
             </div>
             <Footer/>

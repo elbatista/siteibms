@@ -1,0 +1,31 @@
+@import url('../../assets/generalStyles.css');
+
+.button{
+    display: flex;
+    background-color: var(--primary-black);
+    border: solid 2px var(--primary-blue);
+    border-radius: 50px;
+    color: var(--primary-blue);
+    padding: 0 1em; 
+    font-family: Baloo;
+    font-size: 24px;
+    cursor: pointer;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button > i{
+    display: flex;
+    margin-right: 10px;
+}
+
+/* .button:hover{
+    background-color: var(--primary-blue);
+    color: var(--primary-black);
+} */
+
+.button-outline{
+    background-color: white;
+}

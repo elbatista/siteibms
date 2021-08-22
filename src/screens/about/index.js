@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import View from './view';
 import { Actions } from '../../redux/sagas';
+import { withRouter } from "react-router";
 
 class AboutController extends Component {
     componentDidMount(){
@@ -10,7 +11,7 @@ class AboutController extends Component {
     }
     render(){
         return (
-            <View Commons={this.props.Commons} change={this.props.sagaTeste}/>
+            <View Commons={this.props.Commons} change={this.props.sagaTeste} {...this.props}/>
         )
     }
 } 
@@ -18,4 +19,4 @@ class AboutController extends Component {
 export default connect(
     state=>({Commons: state.Commons}),
     dispatch=>bindActionCreators(Actions, dispatch)
-)(AboutController);
+)(withRouter(AboutController));

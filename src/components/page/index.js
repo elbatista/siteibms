@@ -7,7 +7,7 @@ import { Actions } from '../../redux/sagas';
 class Page extends Component {
     render(){
         return (
-            <View value={this.props.Commons.value}>
+            <View value={this.props.Commons.value} padding={this.props.padding}>
                 {this.props.children}
             </View>
         )

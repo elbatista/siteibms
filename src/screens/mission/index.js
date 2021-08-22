@@ -1,16 +1,35 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
+import firebase from "firebase";
 import { bindActionCreators } from 'redux';
 import View from './view';
 import { Actions } from '../../redux/sagas';
 
 class MissionController extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            data: {},
+            image: null
+        }
+    }
     componentDidMount(){
-        this.props.actionChangeStateField('menuSelected', 'mission')
+        this.props.actionChangeStateField('menuSelected', 'mission');
+        
+        firebase.database()
+        .ref("missoes/home")
+        .once("value")
+        .then(snapshot => this.setState({data: snapshot.toJSON()}));
+
+        firebase.storage()
+        .ref('missoes/home.png')
+        .getDownloadURL()
+        .then(path=>this.setState({image: path}))
+
     }
     render(){
         return (
-            <View Commons={this.props.Commons} change={this.props.sagaTeste}/>
+            <View {...this.state}/>
         )
     }
 } 

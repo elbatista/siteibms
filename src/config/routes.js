@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from '../screens/home';
 import Mission from '../screens/mission';
+import MissionEngagement from '../screens/mission/engagement';
 import About from '../screens/about';
 import Resource from '../screens/resource';
 import Course from '../screens/course';
@@ -14,8 +15,11 @@ export default () => (
             <Route exact path="/">
                 <Home/>
             </Route>
-            <Route path="/missao">
+            <Route exact path="/missao">
                 <Mission/>
+            </Route>
+            <Route path="/missao/campanha/:id">
+                <MissionEngagement/>
             </Route>
             <Route path="/sobre">
                 <About/>
