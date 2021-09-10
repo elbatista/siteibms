@@ -3,10 +3,8 @@ import firebase from "firebase";
 import Card from '../../../components/card';
 import Button from '../../../components/button';
 import './styles.css';
-//import { useTranslation } from 'react-i18next';
 
 export default props => {
-    //onst { t } = useTranslation();
     const [url, setData] = useState();
 
     useEffect(() => {
@@ -28,7 +26,7 @@ export default props => {
                         icon={require('../../../assets/images/download.svg')}/>
                 </a>
             </div>
-            {props.valueData && Object.keys(props.valueData).map(key=>{
+            {props.valueData && Object.keys(props.valueData).map(key => {
                 return <Card youtubeID={props.valueData[key].youtubeID} key={key} title={props.valueData[key].nome['pt-br']} desc={props.valueData[key].texto['pt-br']} />
             })}
         </>

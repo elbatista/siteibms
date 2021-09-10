@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import firebase from "firebase";
-//import { useTranslation } from 'react-i18next';
 import View from './view';
 
 export default () => {

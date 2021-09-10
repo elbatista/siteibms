@@ -13,9 +13,9 @@ export default () => {
             <div className="menu"><Menu/></div>
             <div className="header-store">
                 <label>IBMS Store</label>
-                <img src={require('../../assets/images/face.png')} alt='face'/>
-                <img src={require('../../assets/images/insta.png')} alt='insta'/>
-                <img src={require('../../assets/images/youtube.png')} alt='youtube'/>
+                <img src={require('../../assets/images/face.svg')} alt='face'/>
+                <img src={require('../../assets/images/insta.svg')} alt='insta'/>
+                <img src={require('../../assets/images/youtube.svg')} alt='youtube'/>
             </div>
         </div>
     );
