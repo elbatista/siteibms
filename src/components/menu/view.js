@@ -23,7 +23,7 @@ export default props => {
                 <Link to="/sobre">Membresia</Link>
                 <Link to="/sobre">Células</Link>
                 <Link to="/sobre">Horários</Link>
-                <Link to="/sobre">Nossa história</Link>
+                <Link to={{pathname: "/sobre", state: {pagina: "historia"}}}>Nossa história</Link>
                 <Link to={{pathname: "/sobre", state: {pagina: "pastores"}}}>Famílias Pastorais</Link>
             </MenuItem>
             <MenuItem title="Recursos" link="/recursos" menuSelected = "resource"/>

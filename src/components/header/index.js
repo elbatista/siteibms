@@ -1,18 +1,26 @@
-import React, {Component} from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import View from './view';
-import { Actions } from '../../redux/sagas';
+import React from 'react';
+import Menu from '../menu';
+import './styles.css';
 
-class HeaderControler extends Component {
-    render(){
-        return (
-            <View value={this.props.Commons.value}/>
-        )
-    }
-} 
-
-export default connect(
-    state=>({Commons: state.Commons}),
-    dispatch=>bindActionCreators(Actions, dispatch)
-)(HeaderControler);
+export default () => {
+    return (
+        <div className="header">
+            <div className="header-img"><img alt='icone' src={require('../../assets/images/Icon.svg')}/></div>
+            <Menu/>
+            <div className="header-store">
+                <a href="https://ibmsstore.smartpos.app/" target="_blank" rel="noopener noreferrer">
+                    IBMS Store
+                </a>
+                <a href="https://www.facebook.com/igrejabatista.montserrat" target="_blank" rel="noopener noreferrer">
+                    <img src={require('../../assets/images/face.svg')} alt='face'/>
+                </a>
+                <a href="https://www.instagram.com/ibmspoa/" target="_blank" rel="noopener noreferrer">
+                    <img src={require('../../assets/images/insta.svg')} alt='insta'/>
+                </a>
+                <a href="https://www.youtube.com/user/IBMSVIDEO" target="_blank" rel="noopener noreferrer">
+                    <img src={require('../../assets/images/youtube.svg')} alt='youtube'/>
+                </a>
+            </div>
+        </div>
+    );
+};

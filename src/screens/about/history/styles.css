@@ -1,0 +1,16 @@
+
+.history-card{
+    display: flex;
+    align-items: center;
+}
+
+.history-card > div > p{
+    max-width: 400px;
+}
+
+.history-card > img {
+    margin-left: 25px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}

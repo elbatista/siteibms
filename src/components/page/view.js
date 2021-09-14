@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../header2';
+import Header from '../header';
 import Footer from '../footer/view';
 
 export default props => {

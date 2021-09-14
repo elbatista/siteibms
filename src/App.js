@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import "firebase/analytics";
 import ConfigStore from './config/store';
 import Routes from './config/routes';
-import './config/translation/index.js';
+//import './config/translation/index.js';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCxZ1pfuR1YVu7Lh48CrhBuPPDy5z82WZg",
