@@ -27,7 +27,7 @@ export default props => {
                 </a>
             </div>
             {props.valueData && Object.keys(props.valueData).map(key => {
-                return <Card youtubeID={props.valueData[key].youtubeID} key={key} title={props.valueData[key].nome['pt-br']} desc={props.valueData[key].texto['pt-br']} />
+                return <Card youtubeID={props.valueData[key].youtubeID} key={key} title={props.valueData[key].nome} desc={props.valueData[key].texto} />
             })}
         </>
     );

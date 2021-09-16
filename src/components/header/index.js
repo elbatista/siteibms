@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Menu from '../menu';
 import './styles.css';
 
 export default () => {
     return (
         <div className="header">
-            <div className="header-img"><img alt='icone' src={require('../../assets/images/Icon.svg')}/></div>
+            <Link to="/"><div className="header-img"><img alt='icone' src={require('../../assets/images/Icon.svg')}/></div></Link>
             <Menu/>
             <div className="header-store">
                 <a href="https://ibmsstore.smartpos.app/" target="_blank" rel="noopener noreferrer">

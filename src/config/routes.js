@@ -8,6 +8,7 @@ import Resource from '../screens/resource';
 import Course from '../screens/course';
 import Ministery from '../screens/ministery';
 import Donate from '../screens/donate';
+import Admin from '../screens/admin';
 
 export default () => (
     <BrowserRouter>
@@ -35,6 +36,9 @@ export default () => (
             </Route>
             <Route path="/contribua">
                 <Donate/>
+            </Route>
+            <Route path="/admin">
+                <Admin/>
             </Route>
         </Switch>
     </BrowserRouter>
